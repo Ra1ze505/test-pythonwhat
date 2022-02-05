@@ -56,7 +56,7 @@ setup_state(stu_code=stu_code, sol_code=sol_code)
 Ex().check_function_def('shout').check_body().multi(
         has_equal_value(name='shout_word', func=lambda x, y: x[-3:] == y[-3:]),
         has_code('.*\+.*!!!.*'),
-        has_code('print(shout_word)', pattern=False)
+        has_code('print(.*shout_word.*)')
 )
 Ex().check_function('shout')
 
