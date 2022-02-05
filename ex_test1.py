@@ -66,7 +66,7 @@ def change_team():
     
 
     # Change the value of team in global: team
-    team = 'ffhfffyf'
+    team = 'justice league 1'
 # Print team
 print(team)
 
@@ -82,10 +82,11 @@ from pythonwhat.test_exercise import setup_state
 
 setup_state(stu_code=stu_code, sol_code=sol_code)
 
+
 Ex().check_function_def('change_team').check_body().multi(
     has_code('global team', pattern=False),
     has_code('team.*=.*')
 )
 Ex().has_output('teen titans')
 Ex().check_function('change_team')
-Ex().check_function('print', index=1).check_args(0)
+Ex().check_function('print', index=1)
