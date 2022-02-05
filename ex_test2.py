@@ -40,7 +40,7 @@ stu_code = """
 def shout():
     '''Print a string with three exclamation marks'''
     # Concatenate the strings: shout_word
-    shout_word = 'congratulations' + '!!!'
+    shout_word = 'any string' + '!!!'
     # Print shout_word
     print(shout_word)
 
@@ -55,10 +55,8 @@ setup_state(stu_code=stu_code, sol_code=sol_code)
 
 Ex().check_function_def('shout').check_body().multi(
         has_equal_value(name='shout_word', func=lambda x, y: x[-3:] == y[-3:]),
-        has_code('+', pattern=False),
-        # check_function('print')
+        has_code('.*\+.*!!!.*'),
+        has_code('print(shout_word)', pattern=False)
 )
 Ex().check_function('shout')
-Ex().has_output(r'!!!$')
-
 
