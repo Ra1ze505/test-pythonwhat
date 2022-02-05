@@ -1,0 +1,13 @@
+Библиотека pythonwhat -  https://pythonwhat.readthedocs.io/en/latest/articles/tutorial.html
+
+Установка:
+Установить pythonwhat - pip install pythonwhat
+Установить pytest - pip install pytest
+
+Задание:
+Тебе дано два файла ex_test1.py и ex_test2.py они содержат весь необходимый код.
+Твоя задача написать тесты для упражнения (кода студента - stu_code), т.е. проверить правильность написание его кода.
+Что видит студент изначально расположено в начале файла - ex_code. Затем идет верный код - sol_code, потом код студента - stu_code который нужно тестировать.
+
+Чтобы запустить тест нужно выполнить команду
+pytest ex_text1.py
